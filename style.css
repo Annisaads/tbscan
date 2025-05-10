@@ -1,0 +1,194 @@
+/* General Body Styling  */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7faff;
+    color: #2c3e50;
+}
+
+/* Navbar Styling        */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+    background-color: #f0f4f8;
+    border-bottom: 2px solid #dbe2ef;
+    margin-bottom: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #d0e4ff;
+    color: #1a73e8;
+}
+
+.navbar a.active {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Title Section         */
+h1, h2, h3 {
+    color: #001B48;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Form & Select Box     */
+.stSelectbox > div, .stTextInput > div {
+    border-radius: 8px;
+}
+
+.stButton > button {
+    background-color: #001B48;
+    border: #001B48;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #B4D4FF;
+    color: #001B48; 
+    border: #B4D4FF;             
+}
+
+/* File Uploader Styling */
+section[data-testid="stFileUploader"] {
+    background-color: #ffffff;
+    border: 2px dashed #90caf9;
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+section[data-testid="stFileUploader"]:hover {
+    background-color: #e3f2fd;
+}
+
+/* Sidebar Styling       */
+.sidebar .block-container {
+    background-color: #B4D4FF !important;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.sidebar .stSelectbox > div, 
+.sidebar .stTextInput > div {
+    background-color: #B4D4FF !important;
+    border-radius: 8px;
+}
+
+/* Image Preview Styling */
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout     */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Background Overrides  */
+html, body, .stApp {
+    background-color: #EEF5FF !important;
+}
+
+.block-container {
+    background-color: transparent !important;
+    padding: 2rem;
+}
+
+[data-testid="stSidebar"], .st-emotion-cache-1avcm0n {
+    background-color: #ACC9F9 !important;
+}
+
+.css-18e3th9 {
+    padding: 0 !important;
+}
+
+.css-1dp5vir {
+    padding: 2rem !important;
+}
+
+/* Message Styling       */
+.success-message, .warning-message, .error-message {
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: #2e8b57;
+    background-color: #e0f7e3;
+    border: 1px solid #e0f7e3;
+}
+
+.warning-message {
+    color: #f57c00;
+    background-color: #fff3e0;
+    border: 1px solid #fff3e0;
+}
+
+.error-message {
+    color: #d32f2f;
+    background-color: #ffebee;
+    border: 1px solid #ffebee;
+}
+
+/* Prediction Box Styling */
+.prediction-box {
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.prediction-tuberculosis {
+    border-color: #ffe6e6;
+    color: red;
+    background-color: #ffe6e6;
+}
+
+.prediction-normal {
+    border-color: #e6ffe6;
+    color: green;
+    background-color: #e6ffe6;
+}
+
+.prediction-message {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.prediction-tuberculosis-message {
+    color: red;
+}
+
+.prediction-normal-message {
+    color: green;
+}
